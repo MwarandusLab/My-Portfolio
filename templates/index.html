@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#about">About Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro" class="intro-section">
+        <div class="intro-container">
+            <div class="card left-card">
+                <img src="{{ url_for('static', filename='Kheri.jpeg') }}" alt="Your Image">
+            </div>
+            <div class="card right-card">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm [Your Name], a [Your Profession/Role] with experience in [Your Skills/Technologies].
+                    I'm passionate about [Something you're passionate about], and I love building [What you love to build].
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Your skills content goes here.</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <p>Your certifications content goes here.</p>
+    </section>
+
+    <section id="technologies">
+        <h2>Technologies</h2>
+        <p>Your technologies content goes here.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your about me content goes here.</p>
+    </section>
+
+</body>
+</html>

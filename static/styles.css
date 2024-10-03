@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    color: #333;
+}
+/* Introduction Section */
+.intro-section {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the left horizontally */
+    align-items: flex-start;      /* Align items to the top vertically */
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+.intro-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included within the card's total width */
+}
+
+.left-card {
+    flex: 2; /* Image card takes 1/4 of the space */
+}
+
+.left-card img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Restrict the height */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.right-card {
+    flex: 2; /* Text card takes 3/4 of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /* Ensures it spans the entire remaining space */
+    margin: 0; /* Remove any unwanted margin */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding does not overflow outside the card */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .left-card, .right-card {
+        width: 100%;
+    }
+}
